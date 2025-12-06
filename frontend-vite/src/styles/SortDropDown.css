@@ -1,0 +1,39 @@
+.sort-dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort-label {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.sort-select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.sort-select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    color: #111827;
+    font-weight: 500;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.sort-select:focus {
+    outline: none;
+}
+
+.sort-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111827;
+    pointer-events: none;
+}

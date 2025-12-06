@@ -1,0 +1,79 @@
+.filter-panel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.filter-scroll-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    /* for scrollbar spacing if needed */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.filter-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.reset-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 6px;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.reset-btn:hover {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.filter-group {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.filter-select {
+    appearance: none;
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 32px 8px 12px;
+    font-size: 13px;
+    color: #4b5563;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+    min-width: 120px;
+}
+
+.filter-select:hover {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.filter-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #e5e7eb;
+}
+
+.filter-arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    pointer-events: none;
+}
